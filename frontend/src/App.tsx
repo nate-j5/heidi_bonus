@@ -2,6 +2,7 @@ import { useState } from 'react'
 import FeatureRequest from './components/FeatureRequest'
 import FeatureResponse from './components/FeatureResponse'
 import './App.css'
+import heidiLogo from './assets/logos/heidi.png'
 
 interface FeatureRequestResponse {
   summary: string;
@@ -33,7 +34,7 @@ function App() {
         {!response ? (
           <>
             <div className="logo">
-              <img src="/src/assets/logos/heidi.png" alt="Heidi" />
+              <img src={heidiLogo} alt="Heidi" />
             </div>
             <FeatureRequest onSubmit={handleSubmit} />
           </>
