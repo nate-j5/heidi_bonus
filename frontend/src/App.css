@@ -1,0 +1,71 @@
+/* Base styles */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Logo styles */
+.logo {
+  height: 6em;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.logo img {
+  max-height: 100%;
+}
+
+/* Common components */
+.card {
+  padding: 2em;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  width: 600px;
+  max-width: 90%;
+}
+
+/* Container styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 900px;
+  padding: 2.5rem;
+  background-color: white;
+  border-radius: 18px;
+  border: 1px solid rgba(222, 226, 230, 0.6);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(66, 99, 235, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #4263eb, #5c7cfa);
+  z-index: 1;
+}
+
+/* Typography */
+.home-title {
+  color: #212529;
+  font-size: 2.2rem;
+  margin: 0;
+  text-align: center;
+  font-weight: 700;
+}
+
+.home-subtext {
+  color: #495057;
+  font-size: 1rem;
+  margin: 0 0 1rem;
+  text-align: center;
+}

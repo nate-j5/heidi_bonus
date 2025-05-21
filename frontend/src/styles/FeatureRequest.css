@@ -1,0 +1,51 @@
+.feature-request {
+  width: 100%;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #1a1a1a;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 24px;
+}
+
+.request-input {
+  width: 100%;
+  height: 150px;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-size: 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  resize: none;
+  background-color: white;
+  color: #333;
+}
+
+.request-input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.submit-button {
+  background-color: #2563eb;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-button:hover {
+  background-color: #1d4ed8;
+}
