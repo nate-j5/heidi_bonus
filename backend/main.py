@@ -20,7 +20,7 @@ app = FastAPI()
 # Add CORS middleware
 if os.getenv("ENVIRONMENT") == "production":
     logger.info("Starting server in production mode")
-    origins = [os.getenv("FRONTEND_URL", "https://your-production-domain.com")]
+    origins = [os.getenv("FRONTEND_URL", "https://heidi-bonus.onrender.com/")]
 else:
     logger.info("Starting server in development mode")
     origins = ["http://localhost:5173"]

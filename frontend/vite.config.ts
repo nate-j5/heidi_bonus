@@ -14,7 +14,7 @@ export default defineConfig(({ mode }) => {
       proxy: {
         '/api': {
           target: isProduction 
-            ? process.env.VITE_API_URL || 'https://your-production-api.com'
+            ? process.env.VITE_API_URL || 'https://heidi-bonus-server.onrender.com'
             : 'http://localhost:8000',
           changeOrigin: true,
           secure: isProduction,
